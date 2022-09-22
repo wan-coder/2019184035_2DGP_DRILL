@@ -1,7 +1,7 @@
 from pico2d import *
 open_canvas()
 grass = load_image('grass.png')
-character = load_image('run_animation.png')
+character = load_image('doraemong_runssss.png')
 
 x = 0
 frame=0
