@@ -1,18 +1,17 @@
 from pico2d import *
 open_canvas()
 grass = load_image('grass.png')
-character = load_image('doraemong_runssss.png')
+character = load_image('Blue Mushmom.png')
 
 x = 0
 frame=0
 while(x<800):
     clear_canvas()
     grass.draw(400,30)
-    character.clip_draw(frame*136,0,140,180,x,140)
+    character.draw(x,90)
+    x=x+2
     update_canvas()
-    frame=(frame+1)%4 #1 0 1 0 1 0
-    x+=5
-    delay(0.08)
+    delay(0.01)
     get_events()
 
 
